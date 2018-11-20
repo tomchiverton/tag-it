@@ -248,10 +248,12 @@ Returns an array of the text values of all the tags currently in the widget.
 
     $("#myTags").tagit("assignedTags");
 
-### createTag(tagLabel, additionalClass)
+### createTag(tagLabel, additionalClass, isInitBoolean)
 Adds new tag to the list. The `additionalClass` parameter is an optional way to add classes to the tag element.
 
     $("#myTags").tagit("createTag", "brand-new-tag");
+    
+The `isInitBoolean` parameter suppresses the normal behavour of force showing the tag entry area. This can be useful if the tag area is off screen or otherwise invisible during initilisation.    
 
 ### preprocessTag(function, Callback)
 Set a function to be called before tag is created. Callback receives the
